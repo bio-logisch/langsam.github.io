@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+
+    .scr{
+        width: 1000px;
+        height: 800px;
+        border: dotted 1px black;
+        position: fixed;
+        left : 20%;
+    }
+    .key{
+        display: inline-block;
+        border: solid 1px black;
+        width: 150px;
+        height: 50px;
+        text-align: center;
+    }
+    #keys{
+        position: absolute;
+        bottom: 0;
+        margin-left: 20px;
+    }
+    #gamePan{
+        width: 100%;
+        height: 100%;
+    }
+    #endscr{
+        display: none;
+        background-color: white;
+    }
+   
+    
+</style>
+
+<body>
+    <h1>
+      리듬게임   
+    </h1>
+    <button onclick="startgame()">start</button>
+    <div id="timeDisplay"></div>
+    
+        <div id= 'gamescr' class="scr">
+            <div id="keys">
+                <div id='a' class="key">A</div>
+                <div id='s' class="key">S</div>
+                <div id='d' class="key">D</div>
+                <div id='j' class="key">J</div>
+                <div id='k' class="key">K</div>
+                <div id='l' class="key">L</div>
+            </div>
+            <canvas id ='gamePan'></canvas>
+        </div>
+        <div id = 'endscr' class="scr">
+            <h1>end</h1>
+        </div>
+        
+</body>
+</html>
+<script src ="rythmMin.js"></script>

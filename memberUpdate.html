@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            padding: 10px;
+            background-color: lightskyblue;
+        }
+        #navdiv{
+            background-color: darkkhaki;
+            height: 50px;
+            vertical-align: middle;
+            
+        }
+        nav {
+            float: left;
+            display: inline-block;
+            padding-top: 10px;
+        }
+        nav > span{
+            margin-left: 50px;
+            font-size: 20px;
+        }
+        footer{
+            background-color: darkkhaki;
+            padding: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> 쇼핑몰 회원관리 ver 1.0 </h1>
+    </header>
+    <nav>
+        <span> 회원등록 </span>
+        <span> 회원목록조회/수정 </span>
+        <span> 회원매출조회 </span>
+        <span> 홈으로. </span>
+    </nav>
+
+    <div id="joinform">
+        <section>
+            <h1> 홈쇼핑 회원 정보 수정 </h1>
+            <form id="join" action="/joinDone" method="POST">
+            <table>
+                <tr>
+                    <td> 회원번호 </td>
+                    <td><input id="custno" name="custno"> </input></td>
+                </tr>
+                <tr>
+                    <td> 회원성명 </td>
+                    <td><input id="custname" name="custname"> </input></td>
+                </tr>
+                <tr>
+                    <td>회원전화</td>
+                    <td><input id="phone" name="phone"> </input></td>
+                </tr>
+                <tr>
+                    <td> 주소 </td>
+                    <td><input id="address" name="address"> </input></td>
+                </tr>
+                <tr>
+                    <td> 가입일자 </td>
+                    <td><input id="joindate" name="joindate"> </input></td>
+                </tr>
+                <tr>
+                    <td> 고객등급 [A:VIP,B:일반,C:직원] </td>
+                    <td><input id="grade" name="grade"> </input></td>
+                </tr>
+                <tr>
+                    <td> 도시코드 </td>
+                    <td><input id="city" name="city"> </input></td>
+                </tr>
+                <tr>
+                    <button type="submit" id="insert">수정</button>
+                    <button type="button" id="select">조회</button>
+                </tr>
+            </table>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <span> HRDKOREA Copyright©2024 All right reserved Human Resources Development Service of Korea.</span>
+    </footer>
+</body>
+</html>
